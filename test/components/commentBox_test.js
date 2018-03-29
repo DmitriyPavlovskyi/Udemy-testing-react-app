@@ -2,7 +2,12 @@ import { renderComponent, expect } from '../test_helper';
 import CommentBox from '../../src/features/commentBox/index';
 
 describe('Comment Box test', () => {
-  const component = renderComponent(CommentBox);
+  let component;
+
+  beforeEach(() => {
+    component = renderComponent(CommentBox);
+  });
+
   it('Has a correct class', () => {
     expect(component).to.have.class('comment-box');
   });

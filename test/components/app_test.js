@@ -2,10 +2,13 @@ import { renderComponent, expect } from '../test_helper';
 import App from '../../src/root/app';
 
 describe('App', () => {
-  it('Shows the correct text', () => {
-    // Create an instance of app
-    const component = renderComponent(App);
+  let component;
 
-    expect(component).to.contain('Hello World!')
+  beforeEach(() => {
+    component = renderComponent(App);
+  })
+
+  it('Renders a Comment Box component', () => {
+    expect(component.find('.comment-box')).to.exist;
   });
 });
