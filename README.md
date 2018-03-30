@@ -1,7 +1,7 @@
 # React app
 
 ### Using:
-React
+React, mocha, chai
 
 #### Commands
 
