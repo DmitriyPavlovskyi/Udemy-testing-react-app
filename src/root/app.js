@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CommentBox from '../features/commentBox/index';
-import CommentList from '../features/commentBox/commentList';
+import CommentList from '../features/commentBox/components/commentList';
 
 class App extends Component {
   render() {

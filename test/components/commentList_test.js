@@ -1,5 +1,5 @@
 import { renderComponent, expect } from '../test_helper';
-import CommentList from '../../src/features/commentBox/commentList';
+import CommentList from '../../src/features/commentBox/components/commentList';
 
 describe('Comment List', () => {
   let component;

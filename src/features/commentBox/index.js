@@ -14,11 +14,14 @@ class CommentBox extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="comment-box">
+        <h4>Add a comment</h4>
         <textarea
           value={this.state.comment}
           onChange={this.handleChange}
         />
-      <button action="submit">Submit comment</button>
+        <div>
+          <button action="submit">Submit comment</button>
+        </div>
       </form>
     );
   }
@@ -29,7 +32,7 @@ class CommentBox extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    debugger
+
     this.props.saveComment(this.state.comment);
     this.setState({ comment: '' });
   }
