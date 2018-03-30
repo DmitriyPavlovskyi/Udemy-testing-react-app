@@ -15,7 +15,6 @@ describe('Comment List', () => {
   });
 
   it('shows each comment that is provided', () => {
-    console.log(component);
     expect(component).to.contain('First comment');
     expect(component).to.contain('Second comment');
     expect(component).to.contain('Third comment');
